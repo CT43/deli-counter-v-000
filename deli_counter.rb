@@ -1,17 +1,15 @@
 require 'pry'
 katz_deli = []
 
-def line (katz_deli)
-  if katz_deli.length == 0
+def line (order)
+  if order.length == 0
      puts "The line is currently empty."
    else
-      all_line = []
-      counter = 0
-       until all_line.size = katz_deli.size
-         counter += 1
-         a = katz_deli.shift
-         all_line << a
-       end
-       binding.pry 
+     line_start = "The line is currently"
+     counter = 0
+     until counter == order.size do |customer|
+       line_start << " #{counter}. #{customer}"
+     end
+     puts line_start
     end
 end
