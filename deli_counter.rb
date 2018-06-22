@@ -9,6 +9,7 @@ def line (order)
      counter = 0
      until counter == order.size do |customer|
        line_start << " #{counter}. #{customer}"
+       counter += 1
      end
      puts line_start
     end
