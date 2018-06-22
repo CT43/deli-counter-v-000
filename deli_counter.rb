@@ -6,5 +6,5 @@ def line (katz_deli)
    else
       return katz_deli
     end
-    
+
 end
