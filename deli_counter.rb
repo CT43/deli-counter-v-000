@@ -24,6 +24,7 @@ def now_serving (name)
   if name.size == 0
     puts   "There is nobody waiting to be served!"
   else
-    return "Currently serving #{name.shift}"
+    puts  "Currently serving #{name.first}"
+    name.shift
     end
 end
