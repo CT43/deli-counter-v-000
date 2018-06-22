@@ -8,7 +8,7 @@ def line (order)
      line_start = "The line is currently"
      counter = 0
      until counter == order.size do
-       line_start << " #{counter}. order[#{counter}]"
+       line_start << " #{counter}. " + "#{order[counter]}"
        counter += 1
      end
      puts line_start
