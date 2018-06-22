@@ -21,5 +21,9 @@ def take_a_number (array, name)
 end
 
 def now_serving (name)
-  name.size > 0 ?   "Currently serving #{name.shift}" : "There is nobody waiting to be served!"
+  if name.size != 0 
+    return
+      "Currently serving #{name.shift}"
+    else
+      "There is nobody waiting to be served!"
 end
