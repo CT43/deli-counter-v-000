@@ -14,3 +14,7 @@ def line (order)
      puts line_start
     end
 end
+
+def take_a_number (array, name)
+  array << name 
+end
